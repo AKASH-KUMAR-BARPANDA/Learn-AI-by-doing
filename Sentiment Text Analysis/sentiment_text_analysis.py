@@ -1,11 +1,10 @@
 from textblob import TextBlob
 from newspaper import Article
 import nltk
-nltk.download('punkt')
-nltk.download('punkt_tab')
 
-import ssl
-ssl._create_default_https_context = ssl._create_unverified_context
+# nltk.download('punkt')
+# nltk.download('punkt_tab')
+
 
 url = 'https://en.wikipedia.org/wiki/Mathematics'
 article = Article(url)
@@ -14,7 +13,10 @@ article.download()
 article.parse()
 article.nlp()
 
-text = article.text
+text = article.summary
 print(text)
 
+blob = TextBlob(text)
+sentiment = blob.sentiment.polarity
+print(sentiment)
 

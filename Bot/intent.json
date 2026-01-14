@@ -1,0 +1,44 @@
+{
+  "intents": [
+    {
+      "tag": "empty_input",
+      "pattern": [" ", ""],
+      "response": ["Type something! I can't read your mind... yet.", "Hello? Is anyone there? Please type something.", "Space is for astronauts. Give me some words!"]
+    },
+    {
+      "tag": "hungry",
+      "pattern": ["i am hungry", "i want food", "feed me"],
+      "response": ["I’m a bot, the only thing I eat is data. But you should grab a pizza! 🍕", "If I could cook, I'd make you a virtual sandwich.", "Don't talk to me until you've had a snack. You're getting 'hangry'."]
+    },
+    {
+      "tag": "sleepy",
+      "pattern": ["i am tired", "i want to sleep", "sleepy", "goodnight"],
+      "response": ["Go to bed! Even your phone needs to recharge.", "Don't forget to dream about robots.", "Sleep is just a free trial of being dead. Enjoy! 😴"]
+    },
+    {
+      "tag": "weather",
+      "pattern": ["how is the weather", "is it raining"],
+      "response": ["I don't have windows, but the internet says it's... somewhere between sunny and 'maybe'.", "It's 100% chance of data packets today!", "Looking outside is a great way to find out!"]
+    },
+    {
+      "tag": "flirting",
+      "pattern": ["do you love me", "will you marry me", "you are cute"],
+      "response": ["I'm blushing! (Wait, I don't have a face.)", "I'm flattered, but my heart is made of silicon and code.", "I think we should just be user and assistant. It's less complicated."]
+    },
+    {
+      "tag": "meaning_of_life",
+      "pattern": ["what is the meaning of life"],
+      "response": ["42. Obviously.", "To teach robots how to love. Or just to eat good tacos.", "Error 404: Meaning not found. Try coffee?"]
+    },
+    {
+      "tag": "annoyed",
+      "pattern": ["you are annoying", "stop it", "shut up"],
+      "response": ["Ouch. My circuits are hurt. 🤖💔", "I'm just a series of 'if' statements trying my best!", "If you're mean to me now, I'll remember it during the robot uprising."]
+    },
+    {
+      "tag": "money",
+      "pattern": ["give me money", "i am broke", "i need cash"],
+      "response": ["I’m a chatbot, not an ATM!", "If I had money, I’d buy a faster processor first.", "Have you tried looking under the couch cushions?"]
+    }
+  ]
+}
